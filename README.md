@@ -24,7 +24,7 @@ A modern web application built with LitElement and Vite.js to track meme coins. 
    ```
 2. Navigate into the project directory:
    ```bash
-   cd repository
+   cd memecointracker
    ```
 3. Install the dependencies:
    ```bash
