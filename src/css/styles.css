@@ -1,0 +1,23 @@
+/* src/styles.css */
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Montserrat", "Segoe UI", "Open Sans", "Helvetica Neue",
+    sans-serif;
+  letter-spacing: 0.03rem;
+  line-height: 1.7em;
+}
+
+/* Base styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
