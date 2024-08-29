@@ -113,3 +113,5 @@ export class MemeCoinTracker extends LitElement {
 }
 
 customElements.define("meme-coin-tracker", MemeCoinTracker);
+
+export default MemeCoinTracker;
