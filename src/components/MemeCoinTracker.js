@@ -55,6 +55,19 @@ export class MemeCoinTracker extends LitElement {
     this.selectedCoinId = this.selectedCoinId === coinId ? null : coinId;
   }
 
+  formatPrice(price) {
+    if (price >= 1) {
+      return price.toFixed(2); // For prices >= 1, show 2 decimal places
+    } else if (price < 1 && price > 0.001) {
+      return price.toFixed(3); // For prices between 0.001 and 1, show 3 decimal places
+    } else if (price <= 0.001 && price > 0) {
+      let formatted = price.toPrecision(3); // Show 3 significant digits for very small numbers
+      return parseFloat(formatted).toString(); // Convert back to a number string without trailing zeros
+    } else {
+      return "N/A"; // Handle cases where the price might be zero or null
+    }
+  }
+
   render() {
     return html`
       <div class="container">
@@ -77,12 +90,13 @@ export class MemeCoinTracker extends LitElement {
                     </div>
                     <span>
                       $${coin.current_price
-                        ? coin.current_price.toFixed(8)
+                        ? this.formatPrice(coin.current_price)
                         : "N/A"}
                     </span>
                   </div>
                   <div
-                    class="coin-details space-y-4 ${this.selectedCoinId === coin.id
+                    class="coin-details space-y-4 ${this.selectedCoinId ===
+                    coin.id
                       ? "show"
                       : ""}"
                   >
@@ -90,16 +104,17 @@ export class MemeCoinTracker extends LitElement {
                       <p>Market Cap: $${coin.market_cap.toLocaleString()}</p>
                       <p>
                         24h Change:
-                        ${coin.price_change_percentage_24h?.toFixed(2) ||
-                        "N/A"}%
+                        ${coin.price_change_percentage_24h
+                          ? coin.price_change_percentage_24h.toFixed(2)
+                          : "N/A"}%
                       </p>
                       <p>Volume: $${coin.total_volume.toLocaleString()}</p>
                     </div>
                     <p>
                       Supply: ${coin.total_supply?.toLocaleString() || "N/A"}
                     </p>
-                    <p>ATH: $${coin.ath?.toFixed(8) || "N/A"}</p>
-                    <p>ATL: $${coin.atl?.toFixed(8) || "N/A"}</p>
+                    <p>ATH: $${this.formatPrice(coin.ath) || "N/A"}</p>
+                    <p>ATL: $${this.formatPrice(coin.atl) || "N/A"}</p>
                   </div>
                 </div>
               `
