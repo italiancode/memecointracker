@@ -1,4 +1,4 @@
-/*    /index.html   200
+/* /index.html 200
 
 /*
-  Content-Security-Policy: connect-src 'self' https://api.coingecko.com/;
+  Content-Security-Policy: connect-src 'self' https://api.coingecko.com/ https://coin-images.coingecko.com/ https://coingecko.com/;

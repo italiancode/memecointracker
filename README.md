@@ -1,6 +1,6 @@
 **MemeCoinTracker**
 
-A modern web application built with LitElement and Vite.js to track meme coins. This project showcases an interactive and visually appealing tracker that allows users to search for meme coins, view their details, and get real-time updates on their market data. The application includes a responsive design optimized for different screen sizes, with animated transitions for displaying coin details. 
+A modern web application built with LitElement and Vite.js to track meme coins. This project showcases an interactive and visually appealing tracker that allows users to search for meme coins, view their details, and get real-time updates on their market data. The application includes a responsive design optimized for different screen sizes, with animated transitions for displaying coin details.
 
 **Features:**
 
@@ -36,4 +36,3 @@ A modern web application built with LitElement and Vite.js to track meme coins. 
    ```
 
 Feel free to explore and contribute to the project!
-

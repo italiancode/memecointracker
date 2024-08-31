@@ -74,14 +74,15 @@ const globalSemanticCSS = css`
   .coin-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: bold;
   }
 
-  .coin-analytics {
-    display: flex;
-    flex-direction: column;
-    margin-top: 4px;
-    font-size: 0.9em;
+  .coin-header img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
   }
 
   .coin-details {
@@ -99,6 +100,18 @@ const globalSemanticCSS = css`
     opacity: 1;
   }
 
+  .coin-analytics {
+    margin-top: 8px;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .coin-analytics .span {
+    margin-right: 8px;
+  
+  }
+
   @media (min-width: 600px) {
     .container {
       max-width: 500px;
@@ -106,11 +119,6 @@ const globalSemanticCSS = css`
 
     h1 {
       font-size: 2.5rem;
-    }
-
-    .coin-analytics {
-      flex-direction: row;
-      justify-content: space-between;
     }
   }
 
@@ -130,6 +138,11 @@ const globalSemanticCSS = css`
   .load-more:hover {
     background-color: #0099cc;
     box-shadow: 0 0 1rem rgba(0, 200, 255, 0.8);
+  }
+
+  .flex-div {
+    display: flex;
+    align-items: center;
   }
 `;
 

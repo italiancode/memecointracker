@@ -1,9 +1,10 @@
 import { LitElement, html, css } from "lit";
 import { fetchMemeCoins } from "../utils/api";
 import globalSemanticCSS from "../css/global-semanticCSS";
+import { TWStyles } from "../css/twlit";
 
 export class MemeCoinTracker extends LitElement {
-  static styles = [globalSemanticCSS, css``];
+  static styles = [TWStyles, globalSemanticCSS, css``];
 
   static properties = {
     coins: { type: Array },
@@ -70,29 +71,30 @@ export class MemeCoinTracker extends LitElement {
               (coin) => html`
                 <div class="coin" @click="${() => this.toggleDetails(coin.id)}">
                   <div class="coin-header">
-                    <span>${coin.name} (${coin.symbol.toUpperCase()})</span>
+                    <div class="flex-div">
+                      <img src="${coin.icon}" alt="${coin.name} icon" />
+                      <p>${coin.name} (${coin.symbol.toUpperCase()})</p>
+                    </div>
                     <span>
                       $${coin.current_price
                         ? coin.current_price.toFixed(8)
                         : "N/A"}
                     </span>
                   </div>
-                  <div class="coin-analytics">
-                    <span
-                      >Market Cap: $${coin.market_cap.toLocaleString()}</span
-                    >
-                    <span
-                      >24h Change:
-                      ${coin.price_change_percentage_24h?.toFixed(2) ||
-                      "N/A"}%</span
-                    >
-                    <span>Volume: $${coin.total_volume.toLocaleString()}</span>
-                  </div>
                   <div
-                    class="coin-details ${this.selectedCoinId === coin.id
+                    class="coin-details space-y-4 ${this.selectedCoinId === coin.id
                       ? "show"
                       : ""}"
                   >
+                    <div class="coin-analytics flex justify-between gap-5">
+                      <p>Market Cap: $${coin.market_cap.toLocaleString()}</p>
+                      <p>
+                        24h Change:
+                        ${coin.price_change_percentage_24h?.toFixed(2) ||
+                        "N/A"}%
+                      </p>
+                      <p>Volume: $${coin.total_volume.toLocaleString()}</p>
+                    </div>
                     <p>
                       Supply: ${coin.total_supply?.toLocaleString() || "N/A"}
                     </p>
@@ -113,5 +115,3 @@ export class MemeCoinTracker extends LitElement {
 }
 
 customElements.define("meme-coin-tracker", MemeCoinTracker);
-
-export default MemeCoinTracker;

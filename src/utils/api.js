@@ -23,7 +23,8 @@ export async function fetchMemeCoins() {
     total_volume: coin.total_volume,
     price_change_percentage_24h: coin.price_change_percentage_24h,
     total_supply: coin.total_supply,
-    ath: coin.ath, // All Time High 
+    ath: coin.ath, // All Time High
     atl: coin.atl, // All Time Low
+    icon: coin.image, // Add the coin icon URL
   }));
 }
