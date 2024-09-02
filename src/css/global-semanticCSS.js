@@ -25,11 +25,36 @@ const globalSemanticCSS = css`
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Base font size */
     margin-bottom: 1rem;
-    color: #00c8ff;
+    color: #9ffa68; /* Light green to match button */
     text-shadow: 0 0 0.6rem rgba(0, 200, 255, 0.6);
     text-align: center;
+    transition: font-size 0.3s ease; /* Smooth transition */
+  }
+
+  @media (min-width: 300px) {
+    h1 {
+      font-size: 1.2rem; /* Smaller screens */
+    }
+  }
+
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 1.5rem; /* Medium screens */
+    }
+  }
+
+  @media (min-width: 900px) {
+    h1 {
+      font-size: 2rem; /* Larger screens */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 2.5rem; /* Extra large screens */
+    }
   }
 
   .search {
@@ -48,7 +73,7 @@ const globalSemanticCSS = css`
   }
 
   .search:focus {
-    border-color: #00c8ff;
+    border-color: #9ffa68; /* Match button color */
     box-shadow: 0 0 1rem rgba(0, 200, 255, 0.8);
   }
 
@@ -56,7 +81,7 @@ const globalSemanticCSS = css`
     display: flex;
     flex-direction: column;
     padding: 0.75rem;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker for contrast */
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 0.5rem rgba(0, 200, 255, 0.5);
@@ -68,7 +93,7 @@ const globalSemanticCSS = css`
   }
 
   .coin:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker for hover */
   }
 
   .coin-header {
@@ -109,22 +134,17 @@ const globalSemanticCSS = css`
 
   .coin-analytics .span {
     margin-right: 8px;
-  
   }
 
   @media (min-width: 600px) {
     .container {
       max-width: 500px;
     }
-
-    h1 {
-      font-size: 2.5rem;
-    }
   }
 
   .load-more {
-    background-color: #00c8ff;
-    color: #1b2a49;
+    background-color: #9ffa68; /* Light green */
+    color: #1b2a49; /* Dark blue */
     border: none;
     border-radius: 0.5rem;
     padding: 0.75rem 1.5rem;
@@ -136,7 +156,7 @@ const globalSemanticCSS = css`
   }
 
   .load-more:hover {
-    background-color: #0099cc;
+    background-color: #7adf43; /* Darker light green for hover */
     box-shadow: 0 0 1rem rgba(0, 200, 255, 0.8);
   }
 
