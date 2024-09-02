@@ -2,6 +2,7 @@ import { LitElement, html, css } from "lit";
 import { fetchMemeCoins } from "../utils/api";
 import globalSemanticCSS from "../css/global-semanticCSS";
 import { TWStyles } from "../css/twlit";
+import { CanvasClient } from "@dscvr-one/canvas-client-sdk";
 
 export class MemeCoinTracker extends LitElement {
   static styles = [TWStyles, globalSemanticCSS, css``];
@@ -11,7 +12,7 @@ export class MemeCoinTracker extends LitElement {
     filteredCoins: { type: Array },
     searchQuery: { type: String },
     visibleCount: { type: Number },
-    selectedCoinId: { type: String }, // Track selected coin
+    selectedCoinId: { type: String },
   };
 
   constructor() {
@@ -19,13 +20,25 @@ export class MemeCoinTracker extends LitElement {
     this.coins = [];
     this.filteredCoins = [];
     this.searchQuery = "";
-    this.visibleCount = 5; // Initially show 5 coins
-    this.selectedCoinId = null; // No coin selected initially
+    this.visibleCount = 5;
+    this.selectedCoinId = null;
+    this.canvasClient = new CanvasClient();
   }
 
   connectedCallback() {
     super.connectedCallback();
     this.loadCoins();
+    window.addEventListener("resize", this.requestResize.bind(this));
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    window.removeEventListener("resize", this.requestResize.bind(this));
+  }
+
+  firstUpdated() {
+    // Call requestResize after the component is rendered
+    this.requestResize();
   }
 
   async loadCoins() {
@@ -44,7 +57,7 @@ export class MemeCoinTracker extends LitElement {
     this.filteredCoins = this.coins.filter((coin) =>
       coin.name.toLowerCase().includes(this.searchQuery)
     );
-    this.visibleCount = 5; // Reset visible count when searching
+    this.visibleCount = 5;
   }
 
   loadMore() {
@@ -57,20 +70,46 @@ export class MemeCoinTracker extends LitElement {
 
   formatPrice(price) {
     if (price >= 1) {
-      return price.toFixed(2); // For prices >= 1, show 2 decimal places
+      return price.toFixed(2);
     } else if (price < 1 && price > 0.001) {
-      return price.toFixed(3); // For prices between 0.001 and 1, show 3 decimal places
+      return price.toFixed(3);
     } else if (price <= 0.001 && price > 0) {
-      let formatted = price.toPrecision(3); // Show 3 significant digits for very small numbers
-      return parseFloat(formatted).toString(); // Convert back to a number string without trailing zeros
+      let formatted = price.toPrecision(3);
+      return parseFloat(formatted).toString();
     } else {
-      return "N/A"; // Handle cases where the price might be zero or null
+      return "N/A";
+    }
+  }
+
+  requestResize() {
+    const container = this.shadowRoot.querySelector(".container");
+    if (container && container.clientWidth > 0 && container.clientHeight > 0) {
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+
+      console.log("Resizing canvas...");
+      console.log("Calculated Width:", width);
+      console.log("Calculated Height:", height);
+      console.log("CanvasClient Instance:", this.canvasClient);
+
+      this.canvasClient.resize({
+        height: `${height}px`,
+      });
+
+      console.log("Resize request sent to CanvasClient");
+    } else {
+      console.error(
+        "Container element not properly sized or not found. Retrying..."
+      );
+      setTimeout(() => {
+        this.requestResize();
+      }, 100);
     }
   }
 
   render() {
     return html`
-      <div class="container">
+      <div class="container" style="background-color: #0C0F14;">
         <h1>MemeCoin Tracker</h1>
         <input
           type="text"

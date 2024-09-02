@@ -15,6 +15,7 @@
     "deploy": "npm run build && firebase deploy --only hosting"
   },
   "dependencies": {
+    "@dscvr-one/canvas-client-sdk": "^1.1.1",
     "lit": "^2.7.2",
     "page": "^1.11.6",
     "tailwindcss": "^3.3.5",
