@@ -1,16 +1,20 @@
-// vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { resolve } from "path";
 
-export default {
-  // other configurations...
-  server: {
-    hmr: {
-      overlay: false,
-    },
-  },
-
+export default defineConfig({
   resolve: {
     alias: {
-      "@views": "./src/views", // Example alias for views/components folder
+      "@": resolve(__dirname, "./src"),
     },
   },
-};
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+      },
+    },
+  },
+
+  plugins: [react()],
+});

@@ -53,7 +53,7 @@ const globalSemanticCSS = css`
 
   @media (min-width: 1200px) {
     h1 {
-      font-size: 2.5rem; /* Extra large screens */
+      font-size: 2.2rem; /* Extra large screens */
     }
   }
 

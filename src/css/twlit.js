@@ -2036,6 +2036,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   justify-content: space-evenly;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -2439,11 +2443,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-color: #000000e6;
 }
 
-.bg-\\[\\#0C0F14\\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(12 15 20 / var(--tw-bg-opacity));
-}
-
 .bg-\\[\\#3b71ca\\] {
   --tw-bg-opacity: 1;
   background-color: rgb(59 113 202 / var(--tw-bg-opacity));
@@ -2579,6 +2578,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+.bg-\\[\\#0C0F14\\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 15 20 / var(--tw-bg-opacity));
 }
 
 .bg-clip-padding {

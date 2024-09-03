@@ -1,2 +1,2 @@
-import "./components/MemeCoinTracker.js";
+import MemeCoinTracker from "./components/MemeCoinTracker";
 import "./styles.css";
