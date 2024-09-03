@@ -1,3 +1,6 @@
+import MemeCoinTracker from "./src/components/MemeCoinTracker";
+
+import "./src/css/styles.css"
 // On page load or when changing themes
 if (
   localStorage.theme === "dark" ||
