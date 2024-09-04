@@ -11,6 +11,8 @@ const globalSemanticCSS = css`
     color: #e0e0e0;
     font-family: "Orbitron", sans-serif;
     padding: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     box-sizing: border-box;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.2);

@@ -2580,11 +2580,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
-.bg-\\[\\#0C0F14\\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(12 15 20 / var(--tw-bg-opacity));
-}
-
 .bg-clip-padding {
   background-clip: padding-box;
 }

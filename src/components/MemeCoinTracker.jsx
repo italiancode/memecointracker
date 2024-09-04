@@ -1,9 +1,10 @@
 import { LitElement, html, css } from "lit";
 import { fetchMemeCoins } from "../utils/api";
+import { log, error, warn } from "../utils/logger";
 import globalSemanticCSS from "../css/global-semanticCSS";
 import { TWStyles } from "../css/twlit";
 import { CanvasClient } from "@dscvr-one/canvas-client-sdk";
-import { log, error, warn } from "../utils/logger";
+
 import "./BuySellButtons"; // Import the new component
 import HeaderReactComponent from "./react/HeaderReactComponent";
 import { createRoot } from "react-dom/client";
@@ -26,17 +27,23 @@ export class MemeCoinTracker extends LitElement {
     this.searchQuery = "";
     this.visibleCount = 5;
     this.selectedCoinId = null;
+
+    // Initialize CanvasClient
     this.canvasClient = new CanvasClient();
   }
 
   async initializeCanvas() {
     try {
       const response = await this.canvasClient.ready();
+
       if (response) {
         const user = response.untrusted.user;
         const content = response.untrusted.content;
+
         log("User Info:", user);
         log("Content Info:", content);
+
+        // You can now use user and content information in your app logic
       }
     } catch (error) {
       error("Error during CanvasClient initialization:", error);
@@ -46,12 +53,16 @@ export class MemeCoinTracker extends LitElement {
   connectedCallback() {
     super.connectedCallback();
     this.loadCoins();
+
+    // Initialize CanvasClient once iframe is available
     this.initializeCanvas();
 
+    // Set up ResizeObserver
     this.resizeObserver = new ResizeObserver(() => {
       this.requestResize();
     });
 
+    // Delay the observation to ensure the element is available
     setTimeout(() => {
       const container = this.shadowRoot.querySelector(".container");
       if (container) {
@@ -60,7 +71,7 @@ export class MemeCoinTracker extends LitElement {
       } else {
         error("Container element not found for ResizeObserver.");
       }
-    }, 0);
+    }, 0); // Delay by 0ms, adjust if needed
   }
 
   disconnectedCallback() {
@@ -69,23 +80,27 @@ export class MemeCoinTracker extends LitElement {
       this.resizeObserver.disconnect();
       log("ResizeObserver disconnected.");
     }
-    this.canvasClient = undefined;
+    this.canvasClient = undefined; // Cleanup CanvasClient reference
   }
 
   async requestResize() {
     try {
       log("Requesting resize...");
-      const response = await this.canvasClient.ready();
-      if (response) {
+
+      if (this.canvasClient) {
         const container = this.shadowRoot.querySelector(".container");
         if (container) {
           const width = container.clientWidth;
           const height = container.clientHeight;
+
           log(`Resizing canvas to ${width}px x ${height}px`);
+
+          // Adjust the method to check if CanvasClient resize has a specific format or handling
           const resizeResult = await this.canvasClient.resize({
             width: width,
             height: height,
           });
+
           log("Resize result:", resizeResult);
         } else {
           warn("Container element not found for ResizeObserver.");
@@ -139,7 +154,7 @@ export class MemeCoinTracker extends LitElement {
   render() {
     return html`
       <div class="container bg-[#0C0F14]">
-      <div id="react-root"></div>
+        <div id="react-root"></div>
         <input
           type="text"
           class="search mt-4 p-2 w-full rounded bg-gray-800 text-white"
@@ -209,7 +224,7 @@ export class MemeCoinTracker extends LitElement {
   }
 
   firstUpdated() {
-    const reactRoot = this.renderRoot.querySelector('#react-root');
+    const reactRoot = this.renderRoot.querySelector("#react-root");
     if (reactRoot) {
       const root = createRoot(reactRoot);
       root.render(<HeaderReactComponent />);
