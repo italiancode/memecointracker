@@ -8,6 +8,8 @@ import { CanvasClient } from "@dscvr-one/canvas-client-sdk";
 import "./BuySellButtons"; // Import the new component
 import HeaderReactComponent from "./react/HeaderReactComponent";
 import { createRoot } from "react-dom/client";
+import { CoinList } from "./lit/temp/CoinList";
+
 
 export class MemeCoinTracker extends LitElement {
   static styles = [TWStyles, globalSemanticCSS, css``];
@@ -18,6 +20,7 @@ export class MemeCoinTracker extends LitElement {
     searchQuery: { type: String },
     visibleCount: { type: Number },
     selectedCoinId: { type: String },
+    isLoading: { type: Boolean },
   };
 
   constructor() {
@@ -27,9 +30,10 @@ export class MemeCoinTracker extends LitElement {
     this.searchQuery = "";
     this.visibleCount = 5;
     this.selectedCoinId = null;
+    this.isLoading = false; // Initialize loading state
 
-    // Initialize CanvasClient
-    this.canvasClient = new CanvasClient();
+    // Initialize CanvasClient with a referrer
+    this.canvasClient = new CanvasClient({ referrer: window.location.href }); // Pass the referrer
   }
 
   async initializeCanvas() {
@@ -112,6 +116,7 @@ export class MemeCoinTracker extends LitElement {
   }
 
   async loadCoins() {
+    this.isLoading = true; // Set loading state to true
     try {
       this.coins = await fetchMemeCoins();
       this.filteredCoins = this.coins;
@@ -119,6 +124,8 @@ export class MemeCoinTracker extends LitElement {
       error("Error loading meme coins:", error);
       this.coins = [];
       this.filteredCoins = [];
+    } finally {
+      this.isLoading = false; // Reset loading state
     }
   }
 
@@ -161,64 +168,20 @@ export class MemeCoinTracker extends LitElement {
           placeholder="Search MemeCoins"
           @input="${this.handleSearch}"
         />
-        ${this.filteredCoins.length === 0
-          ? html`<p>No MemeCoins found...</p>`
-          : this.filteredCoins.slice(0, this.visibleCount).map(
-              (coin) => html`
-                <div class="coin" @click="${() => this.toggleDetails(coin.id)}">
-                  <div class="coin-header">
-                    <div class="flex-div">
-                      <img src="${coin.icon}" alt="${coin.name} icon" />
-                      <p>${coin.name} (${coin.symbol.toUpperCase()})</p>
-                    </div>
-                    <span>
-                      $${coin.current_price
-                        ? this.formatPrice(coin.current_price)
-                        : "N/A"}
-                    </span>
-                  </div>
-                  <div
-                    class="coin-details space-y-4 ${this.selectedCoinId ===
-                    coin.id
-                      ? "show"
-                      : ""}"
-                  >
-                    <div class="coin-analytics flex justify-between gap-5">
-                      <p>Market Cap: $${coin.market_cap.toLocaleString()}</p>
-                      <p>
-                        24h Change:
-                        ${coin.price_change_percentage_24h
-                          ? coin.price_change_percentage_24h.toFixed(2)
-                          : "N/A"}%
-                      </p>
-                      <p>Volume: $${coin.total_volume.toLocaleString()}</p>
-                    </div>
-
-                    <div class="coin-analytics flex justify-between gap-5">
-                      <div class="grid justify-center gap-3">
-                        <p>
-                          Supply:
-                          ${coin.total_supply?.toLocaleString() || "N/A"}
-                        </p>
-                        <p>ATH: $${this.formatPrice(coin.ath) || "N/A"}</p>
-                        <p>ATL: $${this.formatPrice(coin.atl) || "N/A"}</p>
-                      </div>
-                      <div class="">
-                        <buy-sell-buttons
-                          .contractAddress="${coin.contract_address}"
-                        ></buy-sell-buttons>
-                        <!-- Use the new component -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              `
-            )}
+        ${this.isLoading
+          ? html`<p>Loading coins...</p>` // Show loading message
+          : CoinList({
+              filteredCoins: this.filteredCoins,
+              visibleCount: this.visibleCount,
+              toggleDetails: this.toggleDetails.bind(this),
+              formatPrice: this.formatPrice.bind(this),
+              selectedCoinId: this.selectedCoinId,
+            })}
         ${this.visibleCount < this.filteredCoins.length
-          ? html`<button class="load-more" @click="${this.loadMore}">
+        ? html`<button class="load-more" @click="${this.loadMore}">
               Load More
             </button>`
-          : ""}
+        : ""}
       </div>
     `;
   }

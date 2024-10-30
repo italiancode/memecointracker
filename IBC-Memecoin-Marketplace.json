@@ -1,0 +1,1471 @@
+{
+    "version": 1,
+    "nodes": [
+        {
+            "id": "4532c734-3c08-4843-ad57-b5e66614a11b",
+            "type": "group",
+            "position": {
+                "x": 860,
+                "y": 300
+            },
+            "style": {
+                "width": 170,
+                "height": 520
+            },
+            "data": {
+                "label": "Group-4532",
+                "id": "4532c734-3c08-4843-ad57-b5e66614a11b",
+                "padding": 20,
+                "backgroundColor": "#ffffff",
+                "borderColor": "#0f172a",
+                "width": 100,
+                "height": 100,
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "labelColor": "#0f172a"
+            },
+            "children": [
+                {
+                    "id": "c7057b25-e06f-4a13-ab65-cab0b5a13ae6",
+                    "type": "circle",
+                    "position": {
+                        "x": 930,
+                        "y": 270
+                    },
+                    "data": {
+                        "label": "B",
+                        "backgroundColor": "#1878FF",
+                        "borderColor": "#1878FF",
+                        "labelColor": "#ffffff",
+                        "id": "c7057b25-e06f-4a13-ab65-cab0b5a13ae6",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "width": 40,
+                        "height": 40
+                    },
+                    "width": 40,
+                    "height": 40,
+                    "selected": true,
+                    "measured": {
+                        "width": 40,
+                        "height": 40
+                    }
+                },
+                {
+                    "id": "d7cd27ef-a6d1-4955-93b7-3fd50c3cdd4f",
+                    "type": "text",
+                    "position": {
+                        "x": 870,
+                        "y": 280
+                    },
+                    "data": {
+                        "label": "Chain",
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "labelColor": "#000000",
+                        "id": "d7cd27ef-a6d1-4955-93b7-3fd50c3cdd4f",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "width": 150,
+                        "height": 50
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 50,
+                        "height": 24
+                    }
+                },
+                {
+                    "id": "31dbb728-43fa-4e0f-b0aa-c97f5cc5a5da",
+                    "type": "rectangle",
+                    "position": {
+                        "x": 860,
+                        "y": 360
+                    },
+                    "data": {
+                        "label": "IBC module",
+                        "backgroundColor": "#1878FF",
+                        "borderColor": "#1878FF",
+                        "labelColor": "#ffffff",
+                        "id": "31dbb728-43fa-4e0f-b0aa-c97f5cc5a5da",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "zIndex": 1
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 130,
+                        "height": 60
+                    },
+                    "dragging": false
+                },
+                {
+                    "id": "d112a87b-01a6-4d3f-a5d2-8f960cbdc5e5",
+                    "type": "smart_contract",
+                    "position": {
+                        "x": 890,
+                        "y": 510
+                    },
+                    "data": {
+                        "label": "Smart Contract",
+                        "backgroundColor": "#ffffff",
+                        "borderColor": "#000000",
+                        "labelColor": "#000000",
+                        "id": "d112a87b-01a6-4d3f-a5d2-8f960cbdc5e5",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "width": 70,
+                        "height": 80
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 70,
+                        "height": 80
+                    },
+                    "dragging": false
+                },
+                {
+                    "id": "2ab6d767-8071-4802-80d8-8a29df9d43c8",
+                    "type": "rectangle",
+                    "position": {
+                        "x": 860,
+                        "y": 690
+                    },
+                    "data": {
+                        "label": "\n",
+                        "backgroundColor": "#ecfccb",
+                        "borderColor": "#84cc16",
+                        "labelColor": "#365314",
+                        "id": "2ab6d767-8071-4802-80d8-8a29df9d43c8",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "width": 130,
+                        "height": 60
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 130,
+                        "height": 60
+                    },
+                    "dragging": false
+                }
+            ],
+            "measured": {
+                "width": 170,
+                "height": 520
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "76af66b3-c0db-43ae-9dec-4d464514672d",
+            "type": "group",
+            "position": {
+                "x": -130,
+                "y": 340
+            },
+            "style": {
+                "width": 317,
+                "height": 120
+            },
+            "data": {
+                "label": "Group-76af",
+                "id": "76af66b3-c0db-43ae-9dec-4d464514672d",
+                "padding": 20,
+                "backgroundColor": "#faf5ff",
+                "borderColor": "#d8b4fe",
+                "labelColor": "#d8b4fe",
+                "width": 100,
+                "height": 100,
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid"
+            },
+            "children": [
+                {
+                    "id": "5529bf91-5704-4144-8751-8f4909809ca7",
+                    "type": "text",
+                    "position": {
+                        "x": -79,
+                        "y": 830
+                    },
+                    "data": {
+                        "label": "Cross-Chain Transaction Initiator",
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "labelColor": "#000000",
+                        "id": "5529bf91-5704-4144-8751-8f4909809ca7",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "height": 16,
+                        "fontSize": "18px",
+                        "lineHeight": "1.2",
+                        "fontWeight": "700",
+                        "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji",
+                        "textColor": "#6366f1",
+                        "width": 150
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 276,
+                        "height": 22
+                    },
+                    "dragging": false
+                },
+                {
+                    "id": "0b537ac2-ed46-480d-b188-64a1780df0c0",
+                    "type": "text",
+                    "position": {
+                        "x": -80,
+                        "y": 860
+                    },
+                    "data": {
+                        "label": "Triggers the cross-chain \ntransaction process \nusing IBC.",
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "labelColor": "#000000",
+                        "id": "0b537ac2-ed46-480d-b188-64a1780df0c0",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "height": 16,
+                        "fontSize": "14px",
+                        "lineHeight": "1.2",
+                        "fontWeight": "400",
+                        "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji",
+                        "width": 150
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 150,
+                        "height": 50
+                    },
+                    "dragging": false
+                }
+            ],
+            "measured": {
+                "width": 317,
+                "height": 120
+            },
+            "selected": false,
+            "dragging": false
+        },
+        {
+            "id": "4e838170-1622-488b-82af-e785accdb5a7",
+            "type": "group",
+            "position": {
+                "x": -560,
+                "y": 360
+            },
+            "style": {
+                "width": 247,
+                "height": 320
+            },
+            "data": {
+                "label": "Group-4e83",
+                "id": "4e838170-1622-488b-82af-e785accdb5a7",
+                "padding": 20,
+                "backgroundColor": "#eef2ff",
+                "borderColor": "#a5b4fc",
+                "labelColor": "#a5b4fc",
+                "width": 100,
+                "height": 100,
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid"
+            },
+            "children": [
+                {
+                    "id": "d5fd3fcd-c503-4248-9b74-bdbbf8a3581b",
+                    "type": "text",
+                    "position": {
+                        "x": -310,
+                        "y": 380
+                    },
+                    "data": {
+                        "label": "dApp on Chain A",
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "labelColor": "#000000",
+                        "id": "d5fd3fcd-c503-4248-9b74-bdbbf8a3581b",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "width": 150,
+                        "height": 50,
+                        "textColor": "#6366f1"
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 123,
+                        "height": 24
+                    },
+                    "dragging": false
+                },
+                {
+                    "id": "4b32584d-2521-4d32-9de6-af57c5db25c4",
+                    "type": "text",
+                    "position": {
+                        "x": -350,
+                        "y": 400
+                    },
+                    "data": {
+                        "label": "Cross-chain marketplace",
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "labelColor": "#000000",
+                        "id": "4b32584d-2521-4d32-9de6-af57c5db25c4",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "height": 16,
+                        "fontSize": "18px",
+                        "lineHeight": "1.2",
+                        "fontWeight": "700",
+                        "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji",
+                        "textColor": "#6366f1",
+                        "width": 150
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 207,
+                        "height": 22
+                    },
+                    "dragging": false
+                },
+                {
+                    "id": "a0c9dab7-d558-4ef2-a7de-6194e0c6db41",
+                    "type": "rectangle",
+                    "position": {
+                        "x": -350,
+                        "y": 440
+                    },
+                    "data": {
+                        "label": "Display Memecoin Info",
+                        "backgroundColor": "#dde1e5",
+                        "borderColor": "#d1d5db",
+                        "labelColor": "#111827",
+                        "id": "a0c9dab7-d558-4ef2-a7de-6194e0c6db41",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "zIndex": 1,
+                        "borderStyle": "solid",
+                        "width": 130,
+                        "height": 60
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 194,
+                        "height": 60
+                    },
+                    "dragging": false
+                },
+                {
+                    "id": "084984e5-ab01-44cc-af15-c2e782691b96",
+                    "type": "rectangle",
+                    "position": {
+                        "x": -320,
+                        "y": 600
+                    },
+                    "data": {
+                        "label": "Trade Input",
+                        "backgroundColor": "#dde1e5",
+                        "borderColor": "#d1d5db",
+                        "labelColor": "#111827",
+                        "id": "084984e5-ab01-44cc-af15-c2e782691b96",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "zIndex": 1,
+                        "width": 120,
+                        "borderStyle": "solid",
+                        "height": 60
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 130,
+                        "height": 60
+                    },
+                    "dragging": false
+                }
+            ],
+            "measured": {
+                "width": 257,
+                "height": 450
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 257,
+            "height": 450,
+            "resizing": false
+        },
+        {
+            "id": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "type": "group",
+            "position": {
+                "x": -130,
+                "y": 160
+            },
+            "style": {
+                "width": 267,
+                "height": 154
+            },
+            "data": {
+                "label": "Group-7505",
+                "id": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+                "padding": 20,
+                "backgroundColor": "#f5f5f5",
+                "borderColor": "#d4d4d4",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "labelColor": "#000000",
+                "width": 100,
+                "height": 100
+            },
+            "children": [
+                {
+                    "id": "98321e59-a718-4165-8648-03937576fd0c",
+                    "type": "text",
+                    "position": {
+                        "x": 260,
+                        "y": 610
+                    },
+                    "data": {
+                        "label": "Cross-Chain Query Module",
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "labelColor": "#000000",
+                        "id": "98321e59-a718-4165-8648-03937576fd0c",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "height": 16,
+                        "fontSize": "18px",
+                        "lineHeight": "1.2",
+                        "fontWeight": "700",
+                        "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji",
+                        "textColor": "#6366f1"
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 227,
+                        "height": 22
+                    },
+                    "dragging": false,
+                    "extent": "parent",
+                    "expandParent": true
+                },
+                {
+                    "id": "064d7f7c-e1c9-43b1-b420-c482c75a988a",
+                    "type": "text",
+                    "position": {
+                        "x": 260,
+                        "y": 640
+                    },
+                    "data": {
+                        "label": "Queries available \nmemecoin data \n(price, liquidity, etc.) \nfrom Chain B using \nIBC Interchain Queries",
+                        "backgroundColor": "transparent",
+                        "borderColor": "transparent",
+                        "labelColor": "#000000",
+                        "id": "064d7f7c-e1c9-43b1-b420-c482c75a988a",
+                        "rotation": 0,
+                        "isFlipped": false,
+                        "borderStyle": "solid",
+                        "height": 16,
+                        "fontSize": "14px",
+                        "lineHeight": "1.2",
+                        "fontWeight": "400",
+                        "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji"
+                    },
+                    "selected": true,
+                    "measured": {
+                        "width": 137,
+                        "height": 84
+                    },
+                    "dragging": false,
+                    "extent": "parent",
+                    "expandParent": true
+                }
+            ],
+            "measured": {
+                "width": 313,
+                "height": 154
+            },
+            "selected": false,
+            "dragging": false,
+            "width": 313,
+            "height": 154
+        },
+        {
+            "id": "bdc818f0-c751-41fb-ad46-a11a720bfc9b",
+            "type": "text",
+            "position": {
+                "x": -150,
+                "y": 10
+            },
+            "data": {
+                "label": "Cross-Chain Memecoin Marketplace",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "fontSize": "32px",
+                "fontWeight": "500",
+                "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+                "textColor": "#3B82F6",
+                "id": "bdc818f0-c751-41fb-ad46-a11a720bfc9b",
+                "rotation": 0,
+                "lineHeight": "1.2",
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "width": 150,
+                "height": 50,
+                "labelColor": "#000000"
+            },
+            "measured": {
+                "width": 523,
+                "height": 38
+            },
+            "selected": false,
+            "dragging": false,
+            "style": {}
+        },
+        {
+            "id": "4f17739e-ab41-475b-84ea-a8575c1cec07",
+            "type": "text",
+            "position": {
+                "x": -900,
+                "y": 620
+            },
+            "data": {
+                "label": "CHAIN ",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "labelColor": "#000000",
+                "id": "4f17739e-ab41-475b-84ea-a8575c1cec07",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "width": 150,
+                "height": 50,
+                "fontSize": "14px",
+                "lineHeight": "1.2",
+                "fontWeight": "500"
+            },
+            "selected": false,
+            "measured": {
+                "width": 50,
+                "height": 17
+            },
+            "dragging": false,
+            "style": {}
+        },
+        {
+            "id": "2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "type": "circle",
+            "position": {
+                "x": -960,
+                "y": 340
+            },
+            "data": {
+                "label": "User",
+                "backgroundColor": "#ccfbf1",
+                "borderColor": "#14b8a6",
+                "labelColor": "#134e4a",
+                "id": "2e2a049a-ea46-43bf-b848-21a0196e15b9",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "width": 110,
+                "height": 110
+            },
+            "selected": false,
+            "measured": {
+                "width": 110,
+                "height": 110
+            },
+            "dragging": false,
+            "width": 110,
+            "height": 110,
+            "resizing": false,
+            "style": {}
+        },
+        {
+            "id": "d5fd3fcd-c503-4248-9b74-bdbbf8a3581b",
+            "type": "text",
+            "position": {
+                "x": 70,
+                "y": 20
+            },
+            "data": {
+                "label": "DApp on Chain A",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "labelColor": "#000000",
+                "id": "d5fd3fcd-c503-4248-9b74-bdbbf8a3581b",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "width": 150,
+                "height": 50,
+                "textColor": "#6366f1"
+            },
+            "selected": false,
+            "measured": {
+                "width": 124,
+                "height": 24
+            },
+            "dragging": false,
+            "extent": "parent",
+            "parentId": "4e838170-1622-488b-82af-e785accdb5a7",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "4b32584d-2521-4d32-9de6-af57c5db25c4",
+            "type": "text",
+            "position": {
+                "x": 30,
+                "y": 40
+            },
+            "data": {
+                "label": "Cross-chain marketplace",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "labelColor": "#000000",
+                "id": "4b32584d-2521-4d32-9de6-af57c5db25c4",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "height": 16,
+                "fontSize": "18px",
+                "lineHeight": "1.2",
+                "fontWeight": "700",
+                "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji",
+                "textColor": "#6366f1",
+                "width": 150
+            },
+            "selected": false,
+            "measured": {
+                "width": 207,
+                "height": 22
+            },
+            "dragging": false,
+            "extent": "parent",
+            "parentId": "4e838170-1622-488b-82af-e785accdb5a7",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "98321e59-a718-4165-8648-03937576fd0c",
+            "type": "text",
+            "position": {
+                "x": 26,
+                "y": 20
+            },
+            "data": {
+                "label": "Cross-Chain Query Module",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "labelColor": "#000000",
+                "id": "98321e59-a718-4165-8648-03937576fd0c",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "height": 16,
+                "fontSize": "18px",
+                "lineHeight": "1.2",
+                "fontWeight": "700",
+                "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji",
+                "textColor": "#6366f1",
+                "width": 150
+            },
+            "selected": false,
+            "measured": {
+                "width": 227,
+                "height": 22
+            },
+            "dragging": false,
+            "extent": "parent",
+            "parentId": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "064d7f7c-e1c9-43b1-b420-c482c75a988a",
+            "type": "text",
+            "position": {
+                "x": 26,
+                "y": 50
+            },
+            "data": {
+                "label": "Queries available memecoin data \n(price, liquidity, token details, etc.) \nfrom Chain B using \nIBC Interchain Queries",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "labelColor": "#000000",
+                "id": "064d7f7c-e1c9-43b1-b420-c482c75a988a",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "height": 16,
+                "fontSize": "14px",
+                "lineHeight": "1.2",
+                "fontWeight": "400",
+                "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji",
+                "width": 150
+            },
+            "parentId": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "selected": false,
+            "measured": {
+                "width": 213,
+                "height": 67
+            },
+            "dragging": false,
+            "extent": "parent",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "a0c9dab7-d558-4ef2-a7de-6194e0c6db41",
+            "type": "rectangle",
+            "position": {
+                "x": 30,
+                "y": 80
+            },
+            "data": {
+                "label": "Display Memecoin Info",
+                "backgroundColor": "#dde1e5",
+                "borderColor": "#d1d5db",
+                "labelColor": "#111827",
+                "id": "a0c9dab7-d558-4ef2-a7de-6194e0c6db41",
+                "rotation": 0,
+                "isFlipped": false,
+                "zIndex": 1,
+                "borderStyle": "solid",
+                "width": 130,
+                "height": 60
+            },
+            "selected": false,
+            "measured": {
+                "width": 194,
+                "height": 60
+            },
+            "dragging": false,
+            "extent": "parent",
+            "parentId": "4e838170-1622-488b-82af-e785accdb5a7",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "084984e5-ab01-44cc-af15-c2e782691b96",
+            "type": "rectangle",
+            "position": {
+                "x": 60,
+                "y": 240
+            },
+            "data": {
+                "label": "Trade Input",
+                "backgroundColor": "#dde1e5",
+                "borderColor": "#d1d5db",
+                "labelColor": "#111827",
+                "id": "084984e5-ab01-44cc-af15-c2e782691b96",
+                "rotation": 0,
+                "isFlipped": false,
+                "zIndex": 1,
+                "width": 120,
+                "borderStyle": "solid",
+                "height": 60
+            },
+            "selected": false,
+            "measured": {
+                "width": 130,
+                "height": 60
+            },
+            "dragging": false,
+            "extent": "parent",
+            "parentId": "4e838170-1622-488b-82af-e785accdb5a7",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "c517da21-170d-4965-a4af-a25950cb5b3d",
+            "type": "line",
+            "position": {
+                "x": -360,
+                "y": 350
+            },
+            "data": {
+                "label": "Query",
+                "backgroundColor": "transparent",
+                "borderColor": "#000000",
+                "labelColor": "#000000",
+                "id": "c517da21-170d-4965-a4af-a25950cb5b3d",
+                "rotation": -45,
+                "isFlipped": true,
+                "borderStyle": "solid",
+                "width": 250,
+                "height": 16,
+                "animated": false
+            },
+            "width": 250,
+            "height": 16,
+            "selected": false,
+            "measured": {
+                "width": 250,
+                "height": 16
+            },
+            "resizing": false,
+            "dragging": false,
+            "zIndex": 1,
+            "style": {}
+        },
+        {
+            "id": "5529bf91-5704-4144-8751-8f4909809ca7",
+            "type": "text",
+            "position": {
+                "x": 21,
+                "y": 20
+            },
+            "data": {
+                "label": "Cross-Chain Transaction Initiator",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "labelColor": "#000000",
+                "id": "5529bf91-5704-4144-8751-8f4909809ca7",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "height": 16,
+                "fontSize": "18px",
+                "lineHeight": "1.2",
+                "fontWeight": "700",
+                "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji",
+                "textColor": "#6366f1",
+                "width": 150
+            },
+            "selected": false,
+            "measured": {
+                "width": 276,
+                "height": 22
+            },
+            "dragging": false,
+            "extent": "parent",
+            "parentId": "76af66b3-c0db-43ae-9dec-4d464514672d",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "0b537ac2-ed46-480d-b188-64a1780df0c0",
+            "type": "text",
+            "position": {
+                "x": 20,
+                "y": 50
+            },
+            "data": {
+                "label": "Triggers the cross-chain \ntransaction process \nusing IBC.",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "labelColor": "#000000",
+                "id": "0b537ac2-ed46-480d-b188-64a1780df0c0",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "height": 16,
+                "fontSize": "14px",
+                "lineHeight": "1.2",
+                "fontWeight": "400",
+                "fontFamily": "ui-sanserif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji",
+                "width": 150
+            },
+            "parentId": "76af66b3-c0db-43ae-9dec-4d464514672d",
+            "selected": false,
+            "measured": {
+                "width": 150,
+                "height": 50
+            },
+            "dragging": false,
+            "extent": "parent",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "c7057b25-e06f-4a13-ab65-cab0b5a13ae6",
+            "type": "circle",
+            "position": {
+                "x": 90,
+                "y": 20
+            },
+            "data": {
+                "label": "B",
+                "backgroundColor": "#1878FF",
+                "borderColor": "#1878FF",
+                "labelColor": "#ffffff",
+                "id": "c7057b25-e06f-4a13-ab65-cab0b5a13ae6",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "width": 40,
+                "height": 40
+            },
+            "width": 40,
+            "height": 40,
+            "parentId": "4532c734-3c08-4843-ad57-b5e66614a11b",
+            "selected": false,
+            "measured": {
+                "width": 40,
+                "height": 40
+            },
+            "extent": "parent",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "d7cd27ef-a6d1-4955-93b7-3fd50c3cdd4f",
+            "type": "text",
+            "position": {
+                "x": 30,
+                "y": 30
+            },
+            "data": {
+                "label": "CHAIN",
+                "backgroundColor": "transparent",
+                "borderColor": "transparent",
+                "labelColor": "#000000",
+                "id": "d7cd27ef-a6d1-4955-93b7-3fd50c3cdd4f",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "width": 150,
+                "height": 50
+            },
+            "parentId": "4532c734-3c08-4843-ad57-b5e66614a11b",
+            "selected": false,
+            "measured": {
+                "width": 51,
+                "height": 24
+            },
+            "extent": "parent",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "31dbb728-43fa-4e0f-b0aa-c97f5cc5a5da",
+            "type": "rectangle",
+            "position": {
+                "x": 20,
+                "y": 110
+            },
+            "data": {
+                "label": "IBC module",
+                "backgroundColor": "#1878FF",
+                "borderColor": "#1878FF",
+                "labelColor": "#ffffff",
+                "id": "31dbb728-43fa-4e0f-b0aa-c97f5cc5a5da",
+                "rotation": 0,
+                "isFlipped": false,
+                "zIndex": 1,
+                "width": 130,
+                "height": 60,
+                "borderStyle": "solid"
+            },
+            "selected": false,
+            "measured": {
+                "width": 130,
+                "height": 60
+            },
+            "dragging": false,
+            "extent": "parent",
+            "parentId": "4532c734-3c08-4843-ad57-b5e66614a11b",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "2ab6d767-8071-4802-80d8-8a29df9d43c8",
+            "type": "rectangle",
+            "position": {
+                "x": 20,
+                "y": 410
+            },
+            "data": {
+                "label": "CosmWasm\ncontract",
+                "backgroundColor": "#ecfccb",
+                "borderColor": "#84cc16",
+                "labelColor": "#365314",
+                "id": "2ab6d767-8071-4802-80d8-8a29df9d43c8",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "width": 130,
+                "height": 60
+            },
+            "selected": false,
+            "measured": {
+                "width": 130,
+                "height": 66
+            },
+            "dragging": false,
+            "extent": "parent",
+            "parentId": "4532c734-3c08-4843-ad57-b5e66614a11b",
+            "expandParent": true,
+            "style": {}
+        },
+        {
+            "id": "7ab3690a-2fb8-42ad-a31e-42ef8e005f2a",
+            "type": "line",
+            "position": {
+                "x": -280,
+                "y": 740
+            },
+            "data": {
+                "label": "Swap tokens and send back",
+                "backgroundColor": "transparent",
+                "borderColor": "#000000",
+                "labelColor": "#000000",
+                "id": "7ab3690a-2fb8-42ad-a31e-42ef8e005f2a",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "width": 1120,
+                "height": 16,
+                "animated": false
+            },
+            "width": 1120,
+            "height": 16,
+            "selected": false,
+            "measured": {
+                "width": 1120,
+                "height": 16
+            },
+            "dragging": false,
+            "resizing": false,
+            "style": {}
+        },
+        {
+            "id": "4535d64e-03af-4bd5-9207-d199b46ca8f1",
+            "type": "circle",
+            "position": {
+                "x": -840,
+                "y": 610
+            },
+            "data": {
+                "label": "A",
+                "backgroundColor": "#1878FF",
+                "borderColor": "#1878FF",
+                "labelColor": "#ffffff",
+                "id": "4535d64e-03af-4bd5-9207-d199b46ca8f1",
+                "rotation": 0,
+                "isFlipped": false,
+                "borderStyle": "solid",
+                "width": 40,
+                "height": 40
+            },
+            "width": 40,
+            "height": 40,
+            "selected": false,
+            "measured": {
+                "width": 40,
+                "height": 40
+            },
+            "extent": "parent",
+            "expandParent": true,
+            "dragging": false,
+            "style": {}
+        }
+    ],
+    "edges": [
+        {
+            "source": "46997a0a-952f-40b2-93c3-65debe58a1a9",
+            "sourceHandle": "c-source",
+            "target": "2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "targetHandle": "d-target",
+            "id": "e46997a0a-952f-40b2-93c3-65debe58a1a9-2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "Wallet connection via Chain A (Solana).",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false,
+            "style": {
+                "stroke": "#0f172a",
+                "strokeDasharray": "none"
+            }
+        },
+        {
+            "source": "3294c445-62da-4f89-a0e2-7b084fde5f8f",
+            "sourceHandle": "c-source",
+            "target": "2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "targetHandle": "d-target",
+            "id": "e3294c445-62da-4f89-a0e2-7b084fde5f8f-2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "Wallet connection via Chain A (Solana).",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false,
+            "style": {
+                "stroke": "#0f172a",
+                "strokeDasharray": "none"
+            }
+        },
+        {
+            "source": "c2b8466e-1f53-403e-8efd-d765978e7f9b",
+            "sourceHandle": "c-source",
+            "target": "2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "targetHandle": "d-target",
+            "id": "ec2b8466e-1f53-403e-8efd-d765978e7f9b-2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false
+        },
+        {
+            "source": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "sourceHandle": "c-source",
+            "target": "c2b8466e-1f53-403e-8efd-d765978e7f9b",
+            "targetHandle": "d-target",
+            "id": "e7505a283-d6d1-451c-886c-8c5b921e3adc-c2b8466e-1f53-403e-8efd-d765978e7f9b",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false
+        },
+        {
+            "source": "c2b8466e-1f53-403e-8efd-d765978e7f9b",
+            "sourceHandle": "d-source",
+            "target": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "targetHandle": "c-target",
+            "id": "ec2b8466e-1f53-403e-8efd-d765978e7f9b-7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false
+        },
+        {
+            "source": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "sourceHandle": "c-source",
+            "target": "a0c9dab7-d558-4ef2-a7de-6194e0c6db41",
+            "targetHandle": "d-target",
+            "id": "e7505a283-d6d1-451c-886c-8c5b921e3adc-a0c9dab7-d558-4ef2-a7de-6194e0c6db41",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false
+        },
+        {
+            "source": "a0c9dab7-d558-4ef2-a7de-6194e0c6db41",
+            "sourceHandle": "b-source",
+            "target": "084984e5-ab01-44cc-af15-c2e782691b96",
+            "targetHandle": "a-target",
+            "id": "ea0c9dab7-d558-4ef2-a7de-6194e0c6db41-084984e5-ab01-44cc-af15-c2e782691b96",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "Select memecoin to buy/sell on Chain B (e.g., Ethereum).",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false,
+            "style": {
+                "stroke": "#0f172a",
+                "strokeDasharray": "none"
+            }
+        },
+        {
+            "source": "d89293bf-3f25-4b1c-a6bf-d5a06476f010",
+            "sourceHandle": "c-source",
+            "target": "2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "targetHandle": "d-target",
+            "id": "ed89293bf-3f25-4b1c-a6bf-d5a06476f010-2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "Wallet connection via Chain A (Solana).",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false,
+            "style": {
+                "stroke": "#0f172a",
+                "strokeDasharray": "none"
+            }
+        },
+        {
+            "source": "4e838170-1622-488b-82af-e785accdb5a7",
+            "sourceHandle": "c-source",
+            "target": "2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "targetHandle": "d-target",
+            "id": "e4e838170-1622-488b-82af-e785accdb5a7-2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "Wallet connection via Chain A (Solana).",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false,
+            "style": {
+                "stroke": "#0f172a",
+                "strokeDasharray": "none"
+            }
+        },
+        {
+            "source": "084984e5-ab01-44cc-af15-c2e782691b96",
+            "sourceHandle": "b-source",
+            "target": "593ca016-a103-4d65-b329-6782bd9c8ce6",
+            "targetHandle": "c-target",
+            "id": "e084984e5-ab01-44cc-af15-c2e782691b96-593ca016-a103-4d65-b329-6782bd9c8ce6",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false
+        },
+        {
+            "source": "084984e5-ab01-44cc-af15-c2e782691b96",
+            "sourceHandle": "d-source",
+            "target": "76af66b3-c0db-43ae-9dec-4d464514672d",
+            "targetHandle": "c-target",
+            "id": "e084984e5-ab01-44cc-af15-c2e782691b96-76af66b3-c0db-43ae-9dec-4d464514672d",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "Initiates the cross-chain transaction.",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false,
+            "style": {
+                "stroke": "#0f172a",
+                "strokeDasharray": "none"
+            }
+        },
+        {
+            "source": "eda3b338-462e-4934-9909-070a0b56132e",
+            "sourceHandle": "c-source",
+            "target": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "targetHandle": "d-target",
+            "id": "eeda3b338-462e-4934-9909-070a0b56132e-7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false
+        },
+        {
+            "source": "70bf7205-bbf4-4eb4-a184-f1798a49fade",
+            "sourceHandle": "c-source",
+            "target": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "targetHandle": "d-target",
+            "id": "e70bf7205-bbf4-4eb4-a184-f1798a49fade-7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false
+        },
+        {
+            "source": "31dbb728-43fa-4e0f-b0aa-c97f5cc5a5da",
+            "sourceHandle": "b-source",
+            "target": "2ab6d767-8071-4802-80d8-8a29df9d43c8",
+            "targetHandle": "a-target",
+            "id": "e31dbb728-43fa-4e0f-b0aa-c97f5cc5a5da-2ab6d767-8071-4802-80d8-8a29df9d43c8",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "MsgExecuteContract",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false,
+            "style": {
+                "stroke": "#0f172a",
+                "strokeDasharray": "none"
+            }
+        },
+        {
+            "source": "76af66b3-c0db-43ae-9dec-4d464514672d",
+            "sourceHandle": "d-source",
+            "target": "4532c734-3c08-4843-ad57-b5e66614a11b",
+            "targetHandle": "c-target",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "IBC transfers transaction details from Chain A (Solana) to Chain B (Ethereum), signaling the trade execution.",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false,
+            "style": {
+                "stroke": "#0f172a",
+                "strokeDasharray": "none"
+            },
+            "id": "xy-edge__76af66b3-c0db-43ae-9dec-4d464514672dd-source-4532c734-3c08-4843-ad57-b5e66614a11bc-target"
+        },
+        {
+            "source": "4532c734-3c08-4843-ad57-b5e66614a11b",
+            "sourceHandle": "a-source",
+            "target": "7505a283-d6d1-451c-886c-8c5b921e3adc",
+            "targetHandle": "d-target",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            },
+            "selected": false,
+            "id": "xy-edge__4532c734-3c08-4843-ad57-b5e66614a11ba-source-7505a283-d6d1-451c-886c-8c5b921e3adcd-target"
+        },
+        {
+            "source": "2e2a049a-ea46-43bf-b848-21a0196e15b9",
+            "sourceHandle": "d-source",
+            "target": "4e838170-1622-488b-82af-e785accdb5a7",
+            "targetHandle": "c-target",
+            "id": "e2e2a049a-ea46-43bf-b848-21a0196e15b9-4e838170-1622-488b-82af-e785accdb5a7",
+            "type": "custom",
+            "animated": false,
+            "data": {
+                "animated": false,
+                "color": "#0f172a",
+                "label": "",
+                "borderStyle": "solid",
+                "edgeType": "bezier"
+            },
+            "markerEnd": {
+                "type": "arrowclosed",
+                "color": "#0f172a"
+            }
+        }
+    ],
+    "flowName": "IBC-Memecoin-Marketplace",
+    "imageData": {}
+}
