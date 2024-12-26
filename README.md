@@ -68,7 +68,7 @@ _**[Add a few images or GIFs demonstrating the app here!]**_
 ## Award Announcement  
 MemeCoinTracker was awarded **$3,500** during the [DSCVR Canvas Buildathon Closing Ceremony](https://youtu.be/aTrYfaXhtvc?si=z-aE_l0p721uSbMw), where it was presented under the project name **BigDreamsWeb3 - MemeCoinTracker**.
 
-![DSCVR Announcement](./path_to_your_uploaded_image.jpeg)  
+![DSCVR Announcement](./Screenshot_27-12-2024_02628_www.youtube.com.jpeg)  
 
 ---
 
