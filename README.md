@@ -1,7 +1,3 @@
-Got it! I can help you create a detailed and professional README file for your repository that highlights your achievement and provides all necessary information about your project. Here's a draft of the content for your `README.md` file:
-
----
-
 # MemeCoinTracker 🎉  
 
 **Winner of the $3,500 Prize in the DSCVR Canvas Bounty on Dora Hacks!**  
@@ -71,6 +67,13 @@ MemeCoinTracker was awarded **$3,500** during the [DSCVR Canvas Buildathon Closi
 ![DSCVR Announcement](./Screenshot_27-12-2024_02628_www.youtube.com.jpeg)  
 
 ---
+
+## Acknowledgements
+
+This project was created for the [DSCVR Canvas Bounty](https://dscvr.one/) and awarded $3,500 during the competition hosted by [Dora Hacks](https://dorahacks.io/).
+
+Special thanks to the DSCVR team for organizing the event and supporting innovative projects in Web3!
+
 
 ## Contribution  
 We welcome contributions to enhance the features of MemeCoinTracker. Please feel free to fork the repository and submit a pull request.  
