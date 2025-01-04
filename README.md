@@ -79,7 +79,3 @@ Special thanks to the DSCVR team for organizing the event and supporting innovat
 We welcome contributions to enhance the features of MemeCoinTracker. Please feel free to fork the repository and submit a pull request.  
 
 ---
-
-Let me know if you'd like me to help with:
-1. Formatting the image URL properly after uploading it to your repository.
-2. Optimizing any part of this README further!
