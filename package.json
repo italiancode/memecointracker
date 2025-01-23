@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "postbuild": "copy _headers dist",
     "lighthouse": "concurrently \"vite preview\" \"lighthouse http://localhost:4173 --budget-path=./budget.json --view\"",
-    "light-build": "node utils/clean-lighthouse-report.js && cross-env VITE_APP_URL=http://localhost:4173 vite build && concurrently \"npm run lighthouse\""
+    "light-build": "node utils/clean-lighthouse-report.js && cross-env VITE_APP_URL=http://localhost:4173 vite build && concurrently \"npm run lighthouse\"",
+    "git-commit-push": "git diff-index --quiet HEAD || (git add . && git commit -m \"Something just got fixed!\" && git push origin main)",
+    "git-commit-push-force": "git add . && git commit -m \"Something just got fiexd!\" --no-verify && git push origin main --force"
   },
   "dependencies": {
     "@dscvr-one/canvas-client-sdk": "^1.1.1",

@@ -32,8 +32,9 @@ export class MemeCoinTracker extends LitElement {
     this.selectedCoinId = null;
     this.isLoading = false; // Initialize loading state
 
-    // Initialize CanvasClient with a referrer
-    this.canvasClient = new CanvasClient({ referrer: window.location.href }); // Pass the referrer
+    // Ensure referrer is defined before initializing CanvasClient
+    const referrer = window.location.href || "defaultReferrer"; // Provide a default if needed
+    this.canvasClient = new CanvasClient({ referrer }); // Pass the referrer
   }
 
   async initializeCanvas() {
