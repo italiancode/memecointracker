@@ -3,12 +3,12 @@ import { fetchMemeCoins } from "../utils/api";
 import { log, error, warn } from "../utils/logger";
 import globalSemanticCSS from "../css/global-semanticCSS";
 import { TWStyles } from "../css/twlit";
-import { CanvasClient } from "@dscvr-one/canvas-client-sdk";
 
 import "./BuySellButtons"; // Import the new component
 import HeaderReactComponent from "./react/HeaderReactComponent";
 import { createRoot } from "react-dom/client";
 import { CoinList } from "./lit/temp/CoinList";
+import { CanvasClient } from "@dscvr-one/canvas-client-sdk";
 
 export class MemeCoinTracker extends LitElement {
   static styles = [TWStyles, globalSemanticCSS, css``];
@@ -40,6 +40,9 @@ export class MemeCoinTracker extends LitElement {
         ? window.location.href
         : "defaultReferrer"; // Provide a default if needed
     this.canvasClient = new CanvasClient({ referrer }); // Pass the referrer
+
+    // Now that canvasClient is initialized, call initializeCanvas
+    this.initializeCanvas();
   }
 
   async initializeCanvas() {
@@ -57,6 +60,8 @@ export class MemeCoinTracker extends LitElement {
 
         log("User Info:", user);
         log("Content Info:", content);
+
+        // You can now use user and content information in your app logic
       }
     } catch (err) {
       error("Error during CanvasClient initialization:", err);
@@ -68,11 +73,15 @@ export class MemeCoinTracker extends LitElement {
     this.loadCoins();
 
     // Initialize CanvasClient once iframe is available
-    this.initializeCanvas(); // Call initializeCanvas directly, as it will handle null case
+    this.componentDidMount();
 
     // Set up ResizeObserver
     this.resizeObserver = new ResizeObserver(() => {
-      this.requestResize();
+      if (this.canvasClient) {
+        this.requestResize();
+      } else {
+        error("CanvasClient is not initialized, cannot request resize.");
+      }
     });
 
     // Delay the observation to ensure the element is available
@@ -108,19 +117,23 @@ export class MemeCoinTracker extends LitElement {
 
           log(`Resizing canvas to ${width}px x ${height}px`);
 
-          // Adjust the method to check if CanvasClient resize has a specific format or handling
           const resizeResult = await this.canvasClient.resize({
             width: width,
             height: height,
           });
 
           log("Resize result:", resizeResult);
+          if (resizeResult === undefined) {
+            log("Resize operation completed, but no result was returned.");
+          }
         } else {
           warn("Container element not found for ResizeObserver.");
         }
+      } else {
+        error("CanvasClient is not initialized.");
       }
-    } catch (error) {
-      error("Error during CanvasClient resize:", error);
+    } catch (err) {
+      error("Error during CanvasClient resize:", err);
     }
   }
 
