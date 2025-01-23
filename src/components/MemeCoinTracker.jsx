@@ -10,7 +10,6 @@ import HeaderReactComponent from "./react/HeaderReactComponent";
 import { createRoot } from "react-dom/client";
 import { CoinList } from "./lit/temp/CoinList";
 
-
 export class MemeCoinTracker extends LitElement {
   static styles = [TWStyles, globalSemanticCSS, css``];
 
@@ -31,9 +30,15 @@ export class MemeCoinTracker extends LitElement {
     this.visibleCount = 5;
     this.selectedCoinId = null;
     this.isLoading = false; // Initialize loading state
+    this.canvasClient = null; // Initialize canvasClient as null
+  }
 
+  componentDidMount() {
     // Ensure referrer is defined before initializing CanvasClient
-    const referrer = window.location.href || "defaultReferrer"; // Provide a default if needed
+    const referrer =
+      typeof window !== "undefined" && window.location.href
+        ? window.location.href
+        : "defaultReferrer"; // Provide a default if needed
     this.canvasClient = new CanvasClient({ referrer }); // Pass the referrer
   }
 
@@ -179,10 +184,10 @@ export class MemeCoinTracker extends LitElement {
               selectedCoinId: this.selectedCoinId,
             })}
         ${this.visibleCount < this.filteredCoins.length
-        ? html`<button class="load-more" @click="${this.loadMore}">
+          ? html`<button class="load-more" @click="${this.loadMore}">
               Load More
             </button>`
-        : ""}
+          : ""}
       </div>
     `;
   }

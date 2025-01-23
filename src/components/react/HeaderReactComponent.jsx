@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../../public/memecointracker-logo.png";
+import logo from "/memecointracker-logo.png";
 
 function HeaderReactComponent() {
   return (
