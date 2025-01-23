@@ -43,6 +43,11 @@ export class MemeCoinTracker extends LitElement {
   }
 
   async initializeCanvas() {
+    if (!this.canvasClient) {
+      error("CanvasClient is not initialized.");
+      return; // Exit if canvasClient is null
+    }
+
     try {
       const response = await this.canvasClient.ready();
 
@@ -52,11 +57,9 @@ export class MemeCoinTracker extends LitElement {
 
         log("User Info:", user);
         log("Content Info:", content);
-
-        // You can now use user and content information in your app logic
       }
-    } catch (error) {
-      error("Error during CanvasClient initialization:", error);
+    } catch (err) {
+      error("Error during CanvasClient initialization:", err);
     }
   }
 
@@ -65,7 +68,7 @@ export class MemeCoinTracker extends LitElement {
     this.loadCoins();
 
     // Initialize CanvasClient once iframe is available
-    this.initializeCanvas();
+    this.initializeCanvas(); // Call initializeCanvas directly, as it will handle null case
 
     // Set up ResizeObserver
     this.resizeObserver = new ResizeObserver(() => {
